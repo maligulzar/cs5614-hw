@@ -1,6 +1,6 @@
 # Apache Spark Standalone Cluster on Docker
 
-This standalone Spark cluster is adapted from cluster-apps-on-docker/spark-standalone-cluster-on-docker. Please follow the following steps for a smooth deployment of the cluster in your local machine.
+This standalone Spark cluster is adapted from **cluster-apps-on-docker/spark-standalone-cluster-on-docker**. Please follow the following steps for a smooth deployment of the cluster in your local machine.
 
 
 ## Introduction
