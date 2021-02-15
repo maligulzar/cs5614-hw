@@ -49,5 +49,8 @@ docker-compose up
 | Spark Worker I  | [localhost:8081](http://localhost:8081/) | Spark Worker node with 1 core and 512m of memory (default) |
 | Spark Worker II | [localhost:8082](http://localhost:8082/) | Spark Worker node with 1 core and 512m of memory (default) |
 
-5. Stop the cluster by typing `ctrl+c` on the terminal;
+5. Stop the cluster by typing `ctrl+c` on the terminal or in a separate shell, type;
+```bash 
+docker-compose down
+```
 6. Run step 2 to restart the cluster.
