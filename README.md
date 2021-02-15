@@ -28,9 +28,13 @@ curl -LO https://raw.githubusercontent.com/cluster-apps-on-docker/spark-standalo
 docker-compose up
 ```
 
-4. Visit [localhost:8888](http://localhost:8888/) and Run Apache Spark code using the provided Jupyter [notebooks](build/workspace/) with Scala, PySpark and SparkR examples;
-  - You can also monitor the cluster's health at  Spark Master [localhost:8080](http://localhost:8080/)
-  - To inspect the status and runtime metric of a Spark job, view the application UI at  [localhost:4040](http://localhost:4040/).
+4. Visit [localhost:8888](http://localhost:8888/) and run Apache Spark code using the provided Jupyter [notebooks](build/workspace/) with Scala, PySpark and SparkR examples.  
+  <p align="center"><img src="docs/image/notebook.png"></p>
+  
+You can also monitor the cluster's health at  Spark Master [localhost:8080](http://localhost:8080/)  
+  <p align="center"><img src="docs/image/ui-spar-master.png"></p>
+  
+To inspect the status and runtime metric of a Spark job, view the application UI at  [localhost:4040](http://localhost:4040/).
 
 ### Cluster overview
 
