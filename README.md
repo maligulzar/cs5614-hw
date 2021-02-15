@@ -1,22 +1,12 @@
 # Apache Spark Standalone Cluster on Docker
 
-This standalone Spark cluster is adapted from **cluster-apps-on-docker/spark-standalone-cluster-on-docker**. Please follow the following steps for a smooth deployment of the cluster in your local machine.
+This standalone Spark cluster is adapted from **cluster-apps-on-docker/spark-standalone-cluster-on-docker**. Please follow these steps for a quick deployment of the cluster in your local machine.
 
 
 ## Introduction
 
-This project gives you an **Apache Spark** cluster in standalone mode with a **JupyterLab** interface built on top of **Docker**.
-Learn Apache Spark through its **Scala**, **Python** (PySpark) and **R** (SparkR) API by running the Jupyter [notebooks](build/workspace/) with examples on how to read, process and write data.
-
-<p align="center"><img src="docs/image/cluster-architecture.png"></p>
-
-![build-master](https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker/workflows/build-master/badge.svg)
-![sponsor](https://img.shields.io/badge/patreon-sponsor-ff69b4)
-![jupyterlab-latest-version](https://img.shields.io/docker/v/andreper/jupyterlab/3.0.0-spark-3.0.0?color=yellow&label=jupyterlab-latest)
-![spark-latest-version](https://img.shields.io/docker/v/andreper/spark-master/3.0.0?color=yellow&label=spark-latest)
-![spark-scala-api](https://img.shields.io/badge/spark%20api-scala-red)
-![spark-pyspark-api](https://img.shields.io/badge/spark%20api-pyspark-red)
-![spark-sparkr-api](https://img.shields.io/badge/spark%20api-sparkr-red)
+This project gives you an **Apache Spark** cluster in a standalone mode with a **JupyterLab** interface built on top of **Docker**.
+You can work with Apache Spark through its **Scala** or **Python** (PySpark) API by running the Jupyter [notebooks](build/workspace/) with examples on how to read, process and write data.
 
 ## TL;DR
 
@@ -25,22 +15,9 @@ curl -LO https://raw.githubusercontent.com/cluster-apps-on-docker/spark-standalo
 docker-compose up
 ```
 
-## Contents
-
-- [Quick Start](#quick-start)
-- [Tech Stack](#tech-stack)
-- [Metrics](#metrics)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [Support](#support)
-
-## <a name="quick-start"></a>Quick Start
-
-
 ### Prerequisites
 
- - Install [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/), check **infra** [supported versions](#tech-stack)
- - Make sure that you provide ample resources to Docker. Otherwise, the JupyterLab Notebook won't be able to connect to the Spark Master. 
+Install [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/). Make sure that you provide ample resources to Docker. Otherwise, the JupyterLab Notebook won't be able to connect to the Spark Master. 
  
 <p align="center"><img src="docs/image/docker-resource.png"></p>
 
