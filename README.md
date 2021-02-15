@@ -8,13 +8,6 @@ This standalone Spark cluster is adapted from **cluster-apps-on-docker/spark-sta
 This project gives you an **Apache Spark** cluster in a standalone mode with a **JupyterLab** interface built on top of **Docker**.
 You can work with Apache Spark through its **Scala** or **Python** (PySpark) API by running the Jupyter [notebooks](build/workspace/) with examples on how to read, process and write data.
 
-## TL;DR
-
-```bash
-curl -LO https://raw.githubusercontent.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker/master/docker-compose.yml
-docker-compose up
-```
-
 ### Prerequisites
 
 Install [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/). Make sure that you provide ample resources to Docker. Otherwise, the JupyterLab Notebook won't be able to connect to the Spark Master. 
