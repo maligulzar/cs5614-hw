@@ -14,21 +14,16 @@ Install [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https
  
 <p align="center"><img src="docs/image/docker-resource.png"></p>
 
-### Download from Docker Hub (easier)
+### Download from Docker Hub 
 
-1. Download the [docker compose](docker-compose.yml) file;
-
-```bash
-curl -LO https://raw.githubusercontent.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker/master/docker-compose.yml
-```
-
-2. Start the cluster;
+1. Download this repository.
+2. Go to the ``cs5614-hw`` and start the cluster with the following command.
 
 ```bash
 docker-compose up
 ```
 
-4. Visit [localhost:8888](http://localhost:8888/) and run Apache Spark code using the provided Jupyter [notebooks](build/workspace/) with Scala, PySpark and SparkR examples.  
+3. Visit [localhost:8888](http://localhost:8888/) and run Apache Spark code using the provided Jupyter [notebooks](build/workspace/) with Scala, PySpark and SparkR examples.  
   <p align="center"><img src="docs/image/notebook.png"></p>
   
 You can also monitor the cluster's health at  Spark Master [localhost:8080](http://localhost:8080/)  
@@ -46,8 +41,8 @@ To inspect the status and runtime metric of a Spark job, view the application UI
 | Spark Worker I  | [localhost:8081](http://localhost:8081/) | Spark Worker node with 1 core and 512m of memory (default) |
 | Spark Worker II | [localhost:8082](http://localhost:8082/) | Spark Worker node with 1 core and 512m of memory (default) |
 
-5. Stop the cluster by typing `ctrl+c` on the terminal OR in a separate shell, type
+4. Stop the cluster by typing `ctrl+c` on the terminal OR in a separate shell, type
 ```bash 
 docker-compose down
 ```
-6. Run step 2 to restart the cluster.
+5. Run step 2 to restart the cluster.
