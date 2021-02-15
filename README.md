@@ -10,14 +10,17 @@ You can work with Apache Spark through its **Scala** or **Python** (PySpark) API
 
 ### Prerequisites
 
-Install [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/). Make sure that you provide ample resources to Docker. Otherwise, the JupyterLab Notebook won't be able to connect to the Spark Master. 
+Install Docker in your local machine [Docker](https://docs.docker.com/get-docker/). After the installation is complete, launch the 'Docker' application that will start the Docker service (e.g., Whale-like icon on your Mac status bar). If this step is successful, you should be able to type 'docker' on your command line console. 
+
+Install [Docker Compose](https://docs.docker.com/compose/install/). Make sure that you provide ample resources to Docker. Otherwise, the JupyterLab Notebook won't be able to connect to the Spark Master. 
+
  
 <p align="center"><img src="docs/image/docker-resource.png"></p>
 
 ### Download from Docker Hub 
 
 1. Download this repository.
-2. Go to the ``cs5614-hw`` and start the cluster with the following command.
+2. Go to the ``cs5614-hw`` directory and start the cluster with the following command.
 
 ```bash
 docker-compose up
