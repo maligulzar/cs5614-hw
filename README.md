@@ -17,13 +17,13 @@ Install [Docker Compose](https://docs.docker.com/compose/install/). Make sure th
  
 <p align="center"><img src="docs/image/docker-resource.png"></p>
 
-### Deploying Spark Standalone Cluster using Docker
+## Deploying Spark Standalone Cluster using Docker
 
 
-## Step 1:
+### Step 1:
 Download this repository.
 
-## Step 2: Starting the cluster using Docker-Compose
+### Step 2: Starting the cluster using Docker-Compose
 Go to the ``cs5614-hw`` directory and start the cluster with the following command.
 
 ```bash
@@ -71,7 +71,7 @@ spark-master      | 21/02/15 18:26:44 WARN NativeCodeLoader: Unable to load nati
 
 Give this step a few seconds to set up everything and start all the nodes.
 
-## Step 3: Access Jupyterlab, Master Node, and Driver Node 
+### Step 3: Access Jupyterlab, Master Node, and Driver Node 
 
 Visit [localhost:8888](http://localhost:8888/) and run Apache Spark code using the provided Jupyter [notebooks](build/workspace/) with Scala, PySpark and SparkR examples.  
   <p align="center"><img src="docs/image/notebook.png"></p>
@@ -92,10 +92,10 @@ Visit [localhost:8888](http://localhost:8888/) and run Apache Spark code using t
 | Spark Worker II | [localhost:8082](http://localhost:8082/) | Spark Worker node with 1 core and 512m of memory (default) |
 
 
-## Step 4: Shutting Down the Cluster
+### Step 4: Shutting Down the Cluster
 Use the following command to shutdown the cluster. Make sure you have transferred all the important data from the containers to the host machine. Otherwise the data lying on the containers will be lost
 ` docker-compose stop`
 
 
-## Step 5: Restart the Cluster
+### Step 5: Restart the Cluster
 Run step 2 to restart the cluster.
