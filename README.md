@@ -27,7 +27,7 @@ Download this repository.
 Go to the ``cs5614-hw`` directory and start the cluster with the following command.
 
 ```bash
-docker-compose up
+docker compose up
 ```
 
 This command will initiate the cluster using the recipe `docker-compose.yml`. 
@@ -94,7 +94,7 @@ Visit [localhost:8888](http://localhost:8888/) and run Apache Spark code using t
 
 ### Step 4: Shutting Down the Cluster
 Use the following command to shutdown the cluster. Make sure you have transferred all the important data from the containers to the host machine. Otherwise the data lying on the containers will be lost
-` docker-compose stop`
+` docker compose stop`
 
 
 ### Step 5: Restart the Cluster
